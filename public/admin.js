@@ -32,7 +32,7 @@ const handleSaveButtonClicked = async (id) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            id: id,
+            id: Number(id),
             quantity: input.value
         })
     })
